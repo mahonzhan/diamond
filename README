@@ -1,0 +1,5 @@
+# xl modified
+# 20141102
+cd script
+execute install.sh
+execute run.sh to start it
