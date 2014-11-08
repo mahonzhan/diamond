@@ -14,6 +14,11 @@ if [ $res -eq 1 ];then
     echo "Unsupported python version" >&2
   fi
 fi
+if [ -d "/usr/local/diamond_env" ];then
+  echo "alread have diamond_env"
+  exit 1
+fi
+
 cd $filepath/../pkg
 tar zxf virtualenv-1.11.6.tar.gz
 tar zxf configobj-5.0.6.tar.gz
